@@ -1,0 +1,22 @@
+{
+  "name": "dict-api",
+  "version": "1.0.0",
+  "description": "Returns a Dict of my choosing",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whosthegoss/dict-api.git"
+  },
+  "author": "Nicholas Goss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whosthegoss/dict-api/issues"
+  },
+  "homepage": "https://github.com/whosthegoss/dict-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

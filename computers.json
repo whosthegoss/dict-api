@@ -1,0 +1,40 @@
+{
+	"cars": {
+		"0": {
+			"Brand": "Apple",
+			"Model": "Macbook Air",
+			"Year": "2022",
+			"Color": "Silver",
+			"Processor": "M2",
+			"Memory": "8GB",
+			"Storage": "256GB"
+		},
+		"1": {
+			"Brand": "Apple",
+			"Model": "Macbook Pro",
+			"Year": "2019",
+			"Color": "Silver",
+			"Processor": "Core i7",
+			"Memory": "16GB",
+			"Storage": "256GB"
+		},
+		"2": {
+			"Brand": "Lenovo",
+			"Model": "T14",
+			"Year": "2022",
+			"Color": "Black",
+			"Processor": "Core i5",
+			"Memory": "40GB",
+			"Storage": "256GB"
+		},
+		"3": {
+			"Brand": "Lenovo",
+			"Model": "m910q",
+			"Year": "2017",
+			"Color": "Black",
+			"Processor": "Core i5",
+			"Memory": "24GB",
+			"Storage": "256GB"
+		}
+	}
+}

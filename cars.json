@@ -1,0 +1,32 @@
+{
+	"cars": {
+		"0": {
+			"Brand": "BMW",
+			"Model": "X3",
+			"Year": "2020",
+			"Body_Type": "SUV",
+			"Displacement": "3.0L"
+		},
+		"1": {
+			"Brand": "BMW",
+			"Model": "340i",
+			"Year": "2022",
+			"Body_Type": "Sedan",
+			"Displacement": "3.0L"
+		},
+		"2": {
+			"Brand": "Subaru",
+			"Model": "Outback",
+			"Year": "2014",
+			"Body_Type": "Wagon",
+			"Displacement": "2.5L"
+		},
+		"3": {
+			"Brand": "Honda",
+			"Model": "Accord",
+			"Year": "2018",
+			"Body_Type": "Sedan",
+			"Displacement": "1.5L"
+		}
+	}
+}
