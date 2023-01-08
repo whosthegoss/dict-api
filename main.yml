@@ -1,0 +1,27 @@
+name: DEPLOY
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  
+jobs:
+  test:
+    name: podman
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Stop Pod
+        run: |
+          podman stop run-dict-api
+
+      - name: Get source
+        uses: whosthegoss/dict-api
+        with:
+          path: '/home/nicholasgoss/Projects/dict-api'
+      - name: Create container and run tests
+        run: |
+          podman build -t dict-api -tag latest .
+      - name: Run that container
+        run: |
+          podman  run -dt --rm -p 8888:3000 --name run-dict-api dict-api
