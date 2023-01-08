@@ -6,7 +6,7 @@ on:
   pull_request:
   
 jobs:
-  test:
+  deploy:
     name: podman
     runs-on: self-hosted
     
