@@ -9,7 +9,7 @@ jobs:
   deploy:
     name: podman
     runs-on: self-hosted
-    
+    continue-on-error: true
     steps:
       - name: Stop Pod
         run: |
