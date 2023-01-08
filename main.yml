@@ -14,7 +14,6 @@ jobs:
       - name: Stop Pod
         run: |
           podman stop run-dict-api
-
       - name: Get source
         uses: whosthegoss/dict-api
         with:
