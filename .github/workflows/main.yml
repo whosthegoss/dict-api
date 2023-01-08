@@ -6,7 +6,7 @@ on:
   pull_request:
   
 jobs:
-  test:
+  deploy:
     name: podman
     runs-on: self-hosted
     
@@ -15,9 +15,7 @@ jobs:
         run: |
           podman stop run-dict-api
       - name: Get source
-        uses: whosthegoss/dict-api
-        with:
-          path: '/home/nicholasgoss/Projects/dict-api'
+        uses: actions/checkout@main
       - name: Create container and run tests
         run: |
           podman build -t dict-api -tag latest .
