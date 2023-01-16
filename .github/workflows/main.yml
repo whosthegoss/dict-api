@@ -27,4 +27,4 @@ jobs:
           podman build -t dict-api .
       - name: Run that container
         run: |
-          podman run -dt --rm -p 3000:3000 --name run-dict-api dict-api
+          podman run -dt --rm -p 3000:3000 dict-api
