@@ -1,5 +1,5 @@
 services:
-  frontend:
+  dict-api:
     build:
       context: .
     container_name: dict-api-deployed
