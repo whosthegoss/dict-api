@@ -13,6 +13,7 @@ jobs:
     steps:
       - name: Stop Container
         run: |
+          echo "Stopping dict-api"
           podman stop dict-api-deployed
 
   deploy:
@@ -24,7 +25,10 @@ jobs:
         uses: actions/checkout@main
       - name: Create container and run tests
         run: |
+          echo "Build dict-api"
           podman build -t dict-api .
       - name: Run that container
         run: |
+          echo "Run dict-api"
           podman run -dt --rm -p 3000:3000 --name dict-api-deployed localhost/dict-api
+          podman container ps
