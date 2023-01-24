@@ -11,9 +11,9 @@ jobs:
     runs-on: self-hosted
     continue-on-error: true
     steps:
-      - name: Stop Pod
+      - name: Stop Container
         run: |
-          podman stop run-dict-api
+          podman stop dict-api-deployed
 
   deploy:
     name: Create Container
@@ -27,4 +27,4 @@ jobs:
           podman build -t dict-api .
       - name: Run that container
         run: |
-          podman run -dt --rm -p 3000:3000 dict-api
+          podman run -dt --rm -p 3000:3000 --name dict-api-deployed localhost/dict-api
