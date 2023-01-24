@@ -24,8 +24,4 @@ jobs:
         uses: actions/checkout@main
       - name: Create container and run tests
         run: |
-          podman build -t dict-api .
-      - name: Run that container
-        run: |
-          podman run -d --rm -p 3434:3000 --name dict-api-deployed localhost/dict-api
-          podman container ps
+          podman-compose up
