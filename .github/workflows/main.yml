@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Stop Container
         run: |
-          podman stop dict-api-deployed
+          systemctl stop container-dict-api-deployed
 
   deploy:
     name: Create Container
@@ -24,4 +24,5 @@ jobs:
         uses: actions/checkout@main
       - name: Create container and run tests
         run: |
-          podman-compose up
+          podman build . -t whosthegoss/dict-api:latest
+          podman push whosthegoss/dict-api:latest

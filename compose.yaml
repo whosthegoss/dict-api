@@ -1,7 +1,0 @@
-services:
-  dict-api:
-    build:
-      context: .
-    container_name: dict-api-deployed
-    ports:
-      - "3000:3000"

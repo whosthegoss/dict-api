@@ -5,7 +5,8 @@
 			"Model": "X3",
 			"Year": "2020",
 			"Body_Type": "SUV",
-			"Displacement": "3.0L"
+			"Displacement": "3.0L",
+			"Color": "Black"
 		},
 		"1": {
 			"Brand": "BMW",
