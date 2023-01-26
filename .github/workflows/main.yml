@@ -26,3 +26,12 @@ jobs:
         run: |
           podman build . -t whosthegoss/dict-api:latest
           podman push whosthegoss/dict-api:latest
+
+  start:
+    name: podman
+    runs-on: self-hosted
+    continue-on-error: true
+    steps:
+      - name: Start Container
+        run: |
+          systemctl start container-dict-api-deployed
