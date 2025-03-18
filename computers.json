@@ -7,16 +7,20 @@
 			"Color": "Silver",
 			"Processor": "M2",
 			"Memory": "8GB",
-			"Storage": "256GB"
+			"Storage": "256GB",
+			"Operating System": "macOS",
+			"Status": "In Use"
 		},
 		"1": {
 			"Brand": "Apple",
 			"Model": "Macbook Pro",
-			"Year": "2019",
+			"Year": "2022",
 			"Color": "Silver",
-			"Processor": "Core i7",
+			"Processor": "M2",
 			"Memory": "16GB",
-			"Storage": "256GB"
+			"Storage": "256GB",
+			"Operating System": "macOS",
+			"Status": "In Use"
 		},
 		"2": {
 			"Brand": "Lenovo",
@@ -25,7 +29,9 @@
 			"Color": "Black",
 			"Processor": "Core i5",
 			"Memory": "40GB",
-			"Storage": "256GB"
+			"Storage": "256GB",
+			"Operating System": "Fedora 40",
+			"Status": "SOLD"
 		},
 		"3": {
 			"Brand": "Lenovo",
@@ -34,7 +40,31 @@
 			"Color": "Black",
 			"Processor": "Core i5",
 			"Memory": "24GB",
-			"Storage": "256GB"
+			"Storage": "256GB",
+			"Operating System": "Ubuntu Server 22.04",
+			"Status": "SOLD"
+		},
+		"4": {
+			"Brand": "Apple",
+			"Model": "Macbook Pro",
+			"Year": "2023",
+			"Color": "Midnight",
+			"Processor": "M3",
+			"Memory": "16GB",
+			"Storage": "512GB",
+			"Operating System": "macOS",
+			"Status": "In Use"
+		},
+		"5": {
+			"Brand": "Raspberry Pi",
+			"Model": "4",
+			"Year": "2023",
+			"Color": "Black",
+			"Processor": "A72",
+			"Memory": "4GB",
+			"Storage": "32GB",
+			"Operating System": "Home Assistant OS",
+			"Status": "In Use"
 		}
 	}
 }
